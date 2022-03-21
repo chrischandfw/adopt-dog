@@ -9,8 +9,8 @@ window.addEventListener('load', async() => {
 
     for (let dog of doggies) {
 
-        const dogEl = renderDogCard();
-		
+        const dogEl = renderDogCard(dog);
+
         dogListContainer.append(dogEl);
     }
 });
