@@ -8,9 +8,9 @@ window.addEventListener('load', async() => {
 	// get the id from URL
     const data = new URLSearchParams(window.location.search);
 	// use the id to fetch the dog
-    const dogId = data.get('id');
+    const doggyId = data.get('id');
 
-    const dog = await getDog(dogId);
+    const dog = await getDog(doggyId);
 
 // render and append this dog's details to the container
 
