@@ -7,7 +7,12 @@ const dogListContainer = document.getElementById('dog-list-container');
 window.addEventListener('load', async() => {
     const doggies = await getDogs();
 
-	
+    for (let dog of doggies) {
+
+        const dogEl = renderDogCard();
+		
+        dogListContainer.append(dogEl);
+    }
 });
 
 
